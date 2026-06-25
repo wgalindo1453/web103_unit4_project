@@ -1,0 +1,82 @@
+.car-preview {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.car-preview__scene {
+    position: relative;
+    width: 280px;
+    height: 120px;
+}
+
+.car-preview__body {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 220px;
+    height: 55px;
+    border-radius: 20px 40px 8px 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.car-preview__body--racing {
+    border-radius: 18px 35px 6px 6px;
+}
+
+.car-preview__window {
+    position: absolute;
+    top: 8px;
+    right: 50px;
+    width: 70px;
+    height: 28px;
+    background: rgba(30, 60, 90, 0.7);
+    border-radius: 8px 20px 4px 4px;
+}
+
+.car-preview__spoiler {
+    position: absolute;
+    top: -8px;
+    right: 15px;
+    width: 50px;
+    height: 8px;
+    background: #222;
+    border-radius: 2px;
+}
+
+.car-preview__spoiler--racing {
+    top: -14px;
+    height: 14px;
+    width: 60px;
+    background: #111;
+}
+
+.car-preview__wheels {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+
+.car-preview__wheel {
+    width: 44px;
+    height: 44px;
+    border: 4px solid #333;
+    border-radius: 50%;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s ease;
+}
+
+.car-preview__rim {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
